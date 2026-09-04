@@ -59,13 +59,13 @@
 @media (max-width: 850px) {
   .showcase-head { grid-template-columns: 1fr; gap: 20px; }
   .screens-track {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    width: 100%;
-    padding: 20px 20px 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow: visible;
+    width: min(100%, 300px);
+    padding: 20px 0 40px;
   }
-  .screens-track figure { min-width: 240px; scroll-snap-align: center; }
+  .screens-track figure { min-width: 0; }
   .screens-track .featured { transform: none; }
 }
 
@@ -73,4 +73,37 @@
   .app-showcase { padding: 80px 0 60px; }
   .store-badges { flex-wrap: wrap; }
   .showcase-head h2 { font-size: 42px; }
+  .screens-track { grid-template-columns: 1fr; max-width: 300px; }
+}
+
+/* Recadrage des captures exportées avec une marge technique de 20 %. */
+.screen-frame {
+  aspect-ratio: 344 / 744;
+  overflow: hidden;
+  border-radius: 28px;
+  background: #fff8ef;
+  box-shadow: 0 30px 60px rgba(0,0,0,.25);
+  transition: transform .3s;
+}
+.screens-track .screen-frame img {
+  width: 125%;
+  max-width: none;
+  border-radius: 0;
+  box-shadow: none;
+  transform-origin: top left;
+}
+.screens-track figure:hover .screen-frame { transform: translateY(-8px); }
+.screens-track figure:hover .screen-frame img { transform: none; }
+
+.phone-screen {
+  aspect-ratio: 344 / 744;
+  overflow: hidden;
+  border-radius: 28px;
+  background: #fff8ef;
+}
+.phone-card .phone-screen img {
+  width: 125%;
+  max-width: none;
+  border-radius: 0;
+  transform-origin: top left;
 }
