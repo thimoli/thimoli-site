@@ -20,6 +20,8 @@ function setLanguage(language) {
     es:['Tu aldea','Ejercicios sencillos','Respuesta inmediata','Tu progreso']
   };
   document.querySelectorAll('[data-i18n^="caption"]').forEach((element, index) => element.textContent = captions[lang][index]);
+  const sliderHints = {fr:'← Fais glisser →',en:'← Swipe →',de:'← Wischen →',es:'← Desliza →'};
+  document.getElementById('slider-hint').textContent = sliderHints[lang];
   languageSelect.value = lang;
   localStorage.setItem('thimoli-language', lang);
 }
@@ -40,3 +42,4 @@ document.getElementById('waitlist-form').addEventListener('submit', (event) => {
   note.classList.add('success');
   email.value = '';
 });
+
