@@ -107,3 +107,26 @@
   border-radius: 0;
   transform-origin: top left;
 }
+
+.nav-actions { display: flex; align-items: center; gap: 12px; }
+.language-select {
+  appearance: none;
+  border: 1px solid rgba(23,57,84,.16);
+  border-radius: 12px;
+  padding: 10px 30px 10px 12px;
+  background: #fffdf9 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='m1 1 5 5 5-5' fill='none' stroke='%23173954' stroke-width='2'/%3E%3C/svg%3E") no-repeat right 10px center;
+  color: var(--ink);
+  font: 900 13px Nunito;
+  cursor: pointer;
+}
+
+.eyebrow [data-i18n] {
+  width: auto;
+  height: auto;
+  background: none;
+}
+
+@media (max-width: 850px) {
+  .hero-copy .eyebrow { margin-bottom: 30px; line-height: 1.45; }
+  .hero-copy h1 { margin-top: 0; }
+}

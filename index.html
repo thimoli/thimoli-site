@@ -17,25 +17,25 @@
     <nav class="nav shell" aria-label="Navigation principale">
       <a class="brand" href="#top" aria-label="Thimoli, accueil"><span class="brand-mark">அ</span><span>thimoli</span></a>
       <div class="nav-links">
-        <a href="#methode">La méthode</a>
-        <a href="#parcours">Le parcours</a>
-        <a href="#mission">Notre mission</a>
+        <a href="#methode" data-i18n="navMethod">La méthode</a>
+        <a href="#parcours" data-i18n="navJourney">Le parcours</a>
+        <a href="#mission" data-i18n="navMission">Notre mission</a>
       </div>
-      <a class="button button-small" href="#inscription">Être prévenu</a>
+      <div class="nav-actions"><label class="sr-only" for="language">Langue</label><select id="language" class="language-select" aria-label="Choisir la langue"><option value="fr">FR</option><option value="en">EN</option><option value="de">DE</option><option value="es">ES</option></select><a class="button button-small" href="#inscription" data-i18n="notify">Être prévenu</a></div>
     </nav>
   </header>
 
   <main id="top">
     <section class="hero shell">
       <div class="hero-copy reveal">
-        <div class="eyebrow"><span></span> Apprendre le tamoul devient enfin simple</div>
-        <h1>Ton tamoul.<br><em>Ton rythme.</em></h1>
-        <p class="lead">L’application mobile qui t’aide à lire, comprendre et parler tamoul avec des leçons courtes, des exercices concrets et une progression qui donne envie.</p>
+        <div class="eyebrow"><span></span><span data-i18n="eyebrow">Apprendre le tamoul devient enfin simple</span></div>
+        <h1 data-i18n="heroTitle">Ton tamoul.<br><em>Ton rythme.</em></h1>
+        <p class="lead" data-i18n="heroLead">L’application mobile qui t’aide à lire, comprendre et parler tamoul avec des leçons courtes, des exercices concrets et une progression qui donne envie.</p>
         <div class="hero-actions">
-          <a class="button" href="#inscription">Tester en avant-première <span>→</span></a>
-          <a class="text-link" href="demo/">Voir l’app en action <span>↗</span></a>
+          <a class="button" href="#inscription"><span data-i18n="tryEarly">Tester en avant-première</span> <span>→</span></a>
+          <a class="text-link" href="demo/"><span data-i18n="seeApp">Voir l’app en action</span> <span>↗</span></a>
         </div>
-        <div class="trust"><div class="avatars"><span>வ</span><span>த</span><span>ம</span></div><p><strong>Conçu avec la communauté</strong><br>pour celles et ceux qui veulent renouer avec leur langue.</p></div>
+        <div class="trust"><div class="avatars"><span>வ</span><span>த</span><span>ம</span></div><p data-i18n="community"><strong>Conçu avec la communauté</strong><br>pour celles et ceux qui veulent renouer avec leur langue.</p></div>
       </div>
 
       <div class="hero-visual reveal" aria-label="Aperçu de l’application Thimoli">
@@ -51,49 +51,49 @@
 
     <section class="app-showcase">
       <div class="shell showcase-head reveal">
-        <div><span class="kicker">Une vraie expérience mobile</span><h2>Ouvre l’app.<br><em>Continue ton voyage.</em></h2></div>
-        <p>Pas de cours compliqués ni de longues listes à mémoriser. Thimoli te montre quoi apprendre, te fait pratiquer, puis consolide ce que tu connais déjà.</p>
+        <div><span class="kicker" data-i18n="mobileKicker">Une vraie expérience mobile</span><h2 data-i18n="mobileTitle">Ouvre l’app.<br><em>Continue ton voyage.</em></h2></div>
+        <p data-i18n="mobileText">Pas de cours compliqués ni de longues listes à mémoriser. Thimoli te montre quoi apprendre, te fait pratiquer, puis consolide ce que tu connais déjà.</p>
       </div>
       <div class="screens-track shell reveal">
-        <figure><div class="screen-frame"><img src="media/screens/home.png" alt="Accueil et village Thimoli"></div><figcaption><b>01</b> Ton village</figcaption></figure>
-        <figure class="featured"><div class="screen-frame"><img src="media/screens/lesson.png" alt="Exercice de lecture en tamoul"></div><figcaption><b>02</b> Des exercices simples</figcaption></figure>
-        <figure><div class="screen-frame"><img src="media/screens/lesson-correct.png" alt="Correction positive d’un exercice"></div><figcaption><b>03</b> Un retour immédiat</figcaption></figure>
-        <figure><div class="screen-frame"><img src="media/screens/profile.png" alt="Profil et progression Thimoli"></div><figcaption><b>04</b> Tes progrès</figcaption></figure>
+        <figure><div class="screen-frame"><img src="media/screens/home.png" alt="Accueil et village Thimoli"></div><figcaption><b>01</b> <span data-i18n="caption1">Ton village</span></figcaption></figure>
+        <figure class="featured"><div class="screen-frame"><img src="media/screens/lesson.png" alt="Exercice de lecture en tamoul"></div><figcaption><b>02</b> <span data-i18n="caption2">Des exercices simples</span></figcaption></figure>
+        <figure><div class="screen-frame"><img src="media/screens/lesson-correct.png" alt="Correction positive d’un exercice"></div><figcaption><b>03</b> <span data-i18n="caption3">Un retour immédiat</span></figcaption></figure>
+        <figure><div class="screen-frame"><img src="media/screens/profile.png" alt="Profil et progression Thimoli"></div><figcaption><b>04</b> <span data-i18n="caption4">Tes progrès</span></figcaption></figure>
       </div>
     </section>
 
     <section id="methode" class="section shell">
-      <div class="section-head reveal"><div><span class="kicker">Une méthode qui donne envie</span><h2>Quelques minutes par jour.<br><em>Des progrès qui se voient.</em></h2></div><p>Chaque leçon combine vocabulaire, écoute, lecture et répétition. Tu avances à ton rythme, sans cours interminables.</p></div>
+      <div class="section-head reveal"><div><span class="kicker" data-i18n="methodKicker">Une méthode qui donne envie</span><h2 data-i18n="methodTitle">Quelques minutes par jour.<br><em>Des progrès qui se voient.</em></h2></div><p data-i18n="methodText">Chaque leçon combine vocabulaire, écoute, lecture et répétition. Tu avances à ton rythme, sans cours interminables.</p></div>
       <div class="feature-grid">
-        <article class="feature peach reveal"><div class="feature-icon">10'</div><h3>Une habitude facile</h3><p>Quelques minutes suffisent pour avancer, même pendant une journée chargée.</p><span>01</span></article>
-        <article class="feature blue reveal"><div class="feature-icon">♫</div><h3>Un tamoul utile</h3><p>Écoute et pratique les mots que tu peux vraiment utiliser avec tes proches.</p><span>02</span></article>
-        <article class="feature green reveal"><div class="feature-icon">அ</div><h3>De l’alphabet à l’oral</h3><p>Apprends à reconnaître, lire et prononcer sans te sentir dépassé.</p><span>03</span></article>
+        <article class="feature peach reveal"><div class="feature-icon">10'</div><h3 data-i18n="feature1Title">Une habitude facile</h3><p data-i18n="feature1Text">Quelques minutes suffisent pour avancer, même pendant une journée chargée.</p><span>01</span></article>
+        <article class="feature blue reveal"><div class="feature-icon">♫</div><h3 data-i18n="feature2Title">Un tamoul utile</h3><p data-i18n="feature2Text">Écoute et pratique les mots que tu peux vraiment utiliser avec tes proches.</p><span>02</span></article>
+        <article class="feature green reveal"><div class="feature-icon">அ</div><h3 data-i18n="feature3Title">De l’alphabet à l’oral</h3><p data-i18n="feature3Text">Apprends à reconnaître, lire et prononcer sans te sentir dépassé.</p><span>03</span></article>
       </div>
     </section>
 
     <section id="parcours" class="journey">
       <div class="shell journey-grid">
-        <div class="journey-copy reveal"><span class="kicker">Ton aventure</span><h2>12 villages.<br><em>Un tamoul plus vivant.</em></h2><p>Chaque village ouvre un nouvel univers : les bases, la famille, la cuisine, la culture, les voyages… Plus tu apprends, plus ton monde évolue.</p><ul><li><b>01</b><span><strong>Commence simplement</strong>Les premiers sons, mots et expressions.</span></li><li><b>06</b><span><strong>Prends confiance</strong>Comprends et construis tes phrases.</span></li><li><b>12</b><span><strong>Fais vivre la langue</strong>Parle avec plus de naturel au quotidien.</span></li></ul><a class="text-link" href="demo/">Explorer le prototype <span>↗</span></a></div>
+        <div class="journey-copy reveal"><span class="kicker" data-i18n="journeyKicker">Ton aventure</span><h2 data-i18n="journeyTitle">12 villages.<br><em>Un tamoul plus vivant.</em></h2><p data-i18n="journeyText">Chaque village ouvre un nouvel univers : les bases, la famille, la cuisine, la culture, les voyages… Plus tu apprends, plus ton monde évolue.</p><ul><li><b>01</b><span data-i18n="step1"><strong>Commence simplement</strong>Les premiers sons, mots et expressions.</span></li><li><b>06</b><span data-i18n="step2"><strong>Prends confiance</strong>Comprends et construis tes phrases.</span></li><li><b>12</b><span data-i18n="step3"><strong>Fais vivre la langue</strong>Parle avec plus de naturel au quotidien.</span></li></ul><a class="text-link" href="demo/"><span data-i18n="explore">Explorer le prototype</span> <span>↗</span></a></div>
         <div class="journey-art reveal"><img src="media/villages.jpg" alt="Les villages de progression de Thimoli"></div>
       </div>
     </section>
 
     <section id="mission" class="section shell mission">
       <div class="mission-card reveal">
-        <div><span class="kicker">Pourquoi Thimoli ?</span><h2>Apprendre une langue,<br>c’est aussi <em>retrouver un lien.</em></h2><p>Beaucoup ont grandi en comprenant quelques mots sans jamais oser parler. Thimoli est né pour rendre ce chemin plus accessible, plus moderne et plus fier.</p></div>
-        <div class="quote"><span>“</span><p>La langue tamoule ne devrait pas sembler inaccessible à la génération qui veut la retrouver.</p></div>
+        <div><span class="kicker" data-i18n="whyKicker">Pourquoi Thimoli ?</span><h2 data-i18n="whyTitle">Apprendre une langue,<br>c’est aussi <em>retrouver un lien.</em></h2><p data-i18n="whyText">Beaucoup ont grandi en comprenant quelques mots sans jamais oser parler. Thimoli est né pour rendre ce chemin plus accessible, plus moderne et plus fier.</p></div>
+        <div class="quote"><span>“</span><p data-i18n="quote">La langue tamoule ne devrait pas sembler inaccessible à la génération qui veut la retrouver.</p></div>
       </div>
     </section>
 
     <section id="inscription" class="waitlist">
       <div class="shell waitlist-inner reveal">
-        <div><span class="kicker light">Bientôt sur mobile</span><h2>La première version<br>se prépare avec toi.</h2><p>Inscris-toi pour tester Thimoli avant sa sortie et nous aider à construire l’app dont la communauté a besoin.</p><div class="store-badges"><span>● <b>Bientôt sur<br>l’App Store</b></span><span>▶ <b>Bientôt sur<br>Google Play</b></span></div></div>
-        <form id="waitlist-form" class="form"><label class="sr-only" for="email">Adresse e-mail</label><input id="email" type="email" required placeholder="ton@email.com"><button class="button" type="submit">Me prévenir <span>→</span></button><small id="form-note">Pas de spam. Seulement les nouvelles importantes de Thimoli.</small></form>
+        <div><span class="kicker light" data-i18n="soon">Bientôt sur mobile</span><h2 data-i18n="waitTitle">La première version<br>se prépare avec toi.</h2><p data-i18n="waitText">Inscris-toi pour tester Thimoli avant sa sortie et nous aider à construire l’app dont la communauté a besoin.</p><div class="store-badges"><span>● <b>Coming soon<br>App Store</b></span><span>▶ <b>Coming soon<br>Google Play</b></span></div></div>
+        <form id="waitlist-form" class="form"><label class="sr-only" for="email">Adresse e-mail</label><input id="email" type="email" required placeholder="ton@email.com"><button class="button" type="submit"><span data-i18n="notifyMe">Me prévenir</span> <span>→</span></button><small id="form-note" data-i18n="noSpam">Pas de spam. Seulement les nouvelles importantes de Thimoli.</small></form>
       </div>
     </section>
   </main>
 
-  <footer><div class="shell footer-inner"><a class="brand" href="#top"><span class="brand-mark">அ</span><span>thimoli</span></a><p>Apprendre le tamoul. Faire vivre le lien.</p><div><a href="mailto:bonjour@thimoli.com">Contact</a><a href="#">Confidentialité</a></div></div><div class="shell legal">© 2026 Thimoli. Fait avec soin pour la communauté tamoule.</div></footer>
+  <footer><div class="shell footer-inner"><a class="brand" href="#top"><span class="brand-mark">அ</span><span>thimoli</span></a><p data-i18n="footerTagline">Apprendre le tamoul. Faire vivre le lien.</p><div><a href="mailto:bonjour@thimoli.com">Contact</a><a href="#" data-i18n="privacy">Confidentialité</a></div></div><div class="shell legal" data-i18n="legal">© 2026 Thimoli. Fait avec soin pour la communauté tamoule.</div></footer>
   <script src="site.js"></script>
 </body>
 </html>
