@@ -59,24 +59,32 @@
 @media (max-width: 850px) {
   .showcase-head { grid-template-columns: 1fr; gap: 20px; }
   .screens-track {
-    display: grid;
-    grid-template-columns: 1fr;
-    overflow: visible;
-    width: min(100%, 300px);
-    padding: 20px 0 40px;
+    --slide-width: min(78vw, 300px);
+    display: flex;
+    gap: 18px;
+    overflow-x: auto;
+    width: 100%;
+    max-width: none;
+    margin-top: 10px;
+    padding: 20px calc((100vw - var(--slide-width)) / 2) 40px;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: calc((100vw - var(--slide-width)) / 2);
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
   }
-  .screens-track figure { min-width: 0; }
+  .screens-track::-webkit-scrollbar { display: none; }
+  .screens-track figure { flex: 0 0 var(--slide-width); scroll-snap-align: center; }
   .screens-track .featured { transform: none; }
+  .slider-hint { display: block; }
 }
 
 @media (max-width: 520px) {
   .app-showcase { padding: 80px 0 60px; }
   .store-badges { flex-wrap: wrap; }
   .showcase-head h2 { font-size: 42px; }
-  .screens-track { grid-template-columns: 1fr; max-width: 300px; }
 }
 
-/* Recadrage des captures exportées avec une marge technique de 20 %. */
+/* Cadres homogènes pour les captures propres du prototype. */
 .screen-frame {
   aspect-ratio: 344 / 744;
   overflow: hidden;
@@ -86,7 +94,7 @@
   transition: transform .3s;
 }
 .screens-track .screen-frame img {
-  width: 125%;
+  width: 100%;
   max-width: none;
   border-radius: 0;
   box-shadow: none;
@@ -102,10 +110,20 @@
   background: #fff8ef;
 }
 .phone-card .phone-screen img {
-  width: 125%;
+  width: 100%;
   max-width: none;
   border-radius: 0;
   transform-origin: top left;
+}
+
+.slider-hint {
+  display: none;
+  margin: 24px 0 0;
+  color: #c7d3da;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: .4px;
 }
 
 .nav-actions { display: flex; align-items: center; gap: 12px; }
@@ -130,3 +148,4 @@
   .hero-copy .eyebrow { margin-bottom: 30px; line-height: 1.45; }
   .hero-copy h1 { margin-top: 0; }
 }
+
