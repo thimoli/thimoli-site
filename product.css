@@ -1,3 +1,25 @@
+@font-face {
+  font-family: "Baloo 2";
+  src: url("demo/assets/fonts/baloo-2-latin.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500 800;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("demo/assets/fonts/nunito-latin.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Sans Tamil";
+  src: url("demo/assets/fonts/noto-sans-tamil.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500 800;
+  font-display: swap;
+}
+
 .app-showcase {
   padding: 115px 0 100px;
   background: var(--ink);
@@ -86,7 +108,7 @@
 
 /* Cadres homogènes pour les captures propres du prototype. */
 .screen-frame {
-  aspect-ratio: 344 / 744;
+  aspect-ratio: 390 / 844;
   overflow: hidden;
   border-radius: 28px;
   background: #fff8ef;
@@ -95,7 +117,9 @@
 }
 .screens-track .screen-frame img {
   width: 100%;
+  height: 100%;
   max-width: none;
+  object-fit: cover;
   border-radius: 0;
   box-shadow: none;
   transform-origin: top left;
@@ -104,14 +128,16 @@
 .screens-track figure:hover .screen-frame img { transform: none; }
 
 .phone-screen {
-  aspect-ratio: 344 / 744;
+  aspect-ratio: 390 / 844;
   overflow: hidden;
   border-radius: 28px;
   background: #fff8ef;
 }
 .phone-card .phone-screen img {
   width: 100%;
+  height: 100%;
   max-width: none;
+  object-fit: cover;
   border-radius: 0;
   transform-origin: top left;
 }
@@ -149,3 +175,46 @@
   .hero-copy h1 { margin-top: 0; }
 }
 
+.launch-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 14px 16px;
+  align-items: center;
+  padding: 28px;
+  border: 1px solid rgba(255,255,255,.35);
+  border-radius: 26px;
+  background: rgba(255,255,255,.16);
+  box-shadow: 0 22px 55px rgba(94,44,26,.13);
+}
+.launch-icon {
+  display: grid;
+  place-items: center;
+  width: 55px;
+  height: 55px;
+  border-radius: 18px;
+  background: white;
+  color: var(--coral-dark);
+  font: 700 27px "Noto Sans Tamil";
+}
+.launch-card strong { display: block; font: 800 20px "Baloo 2"; }
+.launch-card p { margin: 4px 0 0; color: #fff7f2; line-height: 1.5; }
+.launch-card .button { grid-column: 1 / -1; width: 100%; }
+.launch-card small { grid-column: 1 / -1; color: #71331f; line-height: 1.45; }
+.dark-button { background: var(--ink); box-shadow: none; }
+.dark-button:hover { background: #102b40; }
+
+.privacy-page { max-width: 860px; padding-top: 150px; padding-bottom: 90px; }
+.privacy-page h1 { margin-top: 20px; }
+.privacy-intro { max-width: 720px; margin: 0 0 50px; color: var(--muted); font-size: 18px; line-height: 1.7; }
+.privacy-page section { padding: 28px 0; border-top: 1px solid #e5ded5; }
+.privacy-page section h2 { margin: 0 0 12px; font-size: 29px; }
+.privacy-page section p { margin: 0; color: var(--muted); font-size: 16px; line-height: 1.75; }
+.privacy-page section a { color: var(--coral-dark); font-weight: 800; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
+
+/* Le contenu reste visible même si JavaScript ou les animations sont bloqués. */
+.reveal { opacity: 1; transform: none; }

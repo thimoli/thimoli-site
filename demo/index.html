@@ -1,26 +1,51 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#fff9f2" />
-  <meta name="description" content="Thimoli, l'application ludique et bienveillante pour apprendre le tamoul un peu chaque jour." />
-  <meta name="color-scheme" content="light" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-  <meta name="apple-mobile-web-app-title" content="Thimoli" />
-  <meta name="format-detection" content="telephone=no" />
-  <title>Thimoli — Apprendre le tamoul</title>
-  <link rel="preload" href="assets/fonts/baloo-2-latin.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="preload" href="assets/fonts/nunito-latin.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="preload" href="assets/fonts/noto-sans-tamil.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="preload" href="assets/mascot/mascot-welcome.webp" as="image" type="image/webp" />
-  <link rel="preload" href="assets/villages/village-03.png" as="image" type="image/png" />
-    <link rel="stylesheet" href="styles.css?v=20260905-2" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#173954">
+  <meta name="color-scheme" content="light">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; frame-src 'none'; img-src 'self'; font-src 'self'; style-src 'self'; script-src 'self'; connect-src 'self'; form-action 'none'; upgrade-insecure-requests">
+  <meta name="description" content="Visite guidée de la nouvelle expérience Thimoli.">
+  <title>Thimoli — Visite guidée</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/baloo-2-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/nunito-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../media/screens-v2/accueil.webp" as="image" type="image/webp">
+  <link rel="stylesheet" href="styles.css?v=20260923-1">
 </head>
 <body>
-  <main id="app" class="phone-shell" aria-live="polite"></main>
-    <script src="app.js?v=20260905-2"></script>
+  <header class="tour-header">
+    <a class="brand" href="../" aria-label="Retour au site Thimoli"><span>அ</span> thimoli</a>
+    <a class="back-link" href="../">← Retour au site</a>
+  </header>
+
+  <main>
+    <section class="tour-copy">
+      <p class="eyebrow">NOUVELLE VERSION</p>
+      <h1>Découvre Thimoli,<br><em>écran par écran.</em></h1>
+      <p>Une visite fidèle à la nouvelle logique de l’application. Sur iPhone, fais simplement glisser les écrans.</p>
+    </section>
+
+    <nav class="screen-tabs" aria-label="Choisir un écran">
+      <button type="button" data-slide="0" aria-current="true">Niveau zéro</button>
+      <button type="button" data-slide="1">Villages</button>
+      <button type="button" data-slide="2">Tirukkural</button>
+      <button type="button" data-slide="3">Statistiques</button>
+    </nav>
+
+    <section class="tour-slider" aria-label="Visite des écrans" tabindex="0">
+      <article class="tour-slide" data-index="0"><div class="phone"><img src="../media/screens-v2/accueil.webp" alt="Niveau zéro avec 18 quêtes" width="780" height="1688"></div><div class="slide-copy"><span>01</span><h2>Commencer sans se perdre</h2><p>Le niveau zéro rassemble 18 quêtes et 54 activités pour installer les premiers repères.</p></div></article>
+      <article class="tour-slide" data-index="1"><div class="phone"><img src="../media/screens-v2/villages.webp" alt="Village avec la prochaine mission" width="780" height="1688"></div><div class="slide-copy"><span>02</span><h2>Avancer de village en village</h2><p>Chaque village propose 10 quêtes et indique clairement la prochaine mission à accomplir.</p></div></article>
+      <article class="tour-slide" data-index="2"><div class="phone"><img src="../media/screens-v2/kural.webp" alt="Atelier mémoire Tirukkural" width="780" height="1688"></div><div class="slide-copy"><span>03</span><h2>Mémoriser le Tirukkural</h2><p>Lis, reconstruis les deux lignes puis évalue ta récitation, parmi 1 330 Kurals et 133 chapitres.</p></div></article>
+      <article class="tour-slide" data-index="3"><div class="phone"><img src="../media/screens-v2/stats.webp" alt="Statistiques d’apprentissage" width="780" height="1688"></div><div class="slide-copy"><span>04</span><h2>Voir son rythme réel</h2><p>Les séances, la précision et le temps d’apprentissage restent lisibles et faciles à retrouver.</p></div></article>
+    </section>
+
+    <div class="tour-controls" aria-label="Navigation des écrans"><button type="button" id="previous" aria-label="Écran précédent">←</button><div class="dots" aria-hidden="true"><i class="active"></i><i></i><i></i><i></i></div><button type="button" id="next" aria-label="Écran suivant">→</button></div>
+
+    <aside class="tour-note"><strong>Une visite sans collecte</strong><span>Cette démo ne demande aucun compte et n’envoie aucune donnée personnelle.</span></aside>
+  </main>
+  <script src="app.js?v=20260923-1" defer></script>
 </body>
 </html>
-
