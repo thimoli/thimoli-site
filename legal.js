@@ -12,19 +12,19 @@ const legalCopy = {
     "privacy": [
       [
         "En bref",
-        "Ta progression et tes réglages restent dans ce navigateur. Il n’y a pas de compte connecté ni de synchronisation entre appareils. N’écris pas d’informations personnelles dans les exercices."
+        "Dans l’app installée, ta progression et tes réglages restent sur cet appareil. Dans la version web, ils restent dans ce navigateur. Aucun compte ni synchronisation entre appareils n’est proposé dans la V1. N’écris pas d’informations personnelles dans les exercices."
       ],
       [
         "Enfants et familles",
         "Thimoli est pensé pour pouvoir être utilisé par des enfants. Dans Thimoli, la progression, les réponses et les réglages sont enregistrés dans ce navigateur. Les données techniques transmises lors du chargement sont décrites dans la rubrique « Connexion et prestataires ». Un parent ou tuteur peut à tout moment consulter, exporter ou effacer ces données locales avec les outils proposés plus bas sur cette page."
       ],
       [
-        "Ce que le prototype enregistre",
+        "Ce que Thimoli enregistre",
         "Le stockage local contient les réglages, la progression, les réponses et tentatives, les brouillons d’écriture, les sessions et durées d’apprentissage, les cœurs et les révisions Kural. Ils servent à reprendre les activités et afficher ton bilan, pas à établir un profil public."
       ],
       [
         "Conservation et effacement",
-        "Ces données restent jusqu’à leur suppression par toi ou le navigateur. Il n’y a pas de délai automatique d’expiration. Elles sont propres à chaque adresse web de Thimoli : changer de lien peut donner l’impression d’avoir perdu sa progression. Sur un appareil partagé, les autres utilisateurs du même navigateur peuvent y accéder."
+        "Les données locales restent jusqu’à leur effacement par toi, l’appareil ou le navigateur. Il n’y a pas de délai automatique d’expiration. Elles sont séparées entre l’app installée et les différentes adresses web de Thimoli. Les outils de cette page agissent uniquement sur la version ouverte à cette adresse : pour gérer les données de l’app installée, ouvre sa page Confidentialité depuis ses paramètres. L’export porte sur la progression, les réponses et les réglages ; les poèmes et le profil local séparé ne sont pas inclus dans cet export. Sur un appareil partagé, les autres personnes utilisant la même app ou le même profil de navigateur peuvent accéder aux données locales."
       ],
       [
         "Connexion et prestataires",
@@ -71,7 +71,7 @@ const legalCopy = {
         "Les exercices Thimoli sont des créations originales : ils ne reproduisent aucun manuel scolaire ni sujet d’examen. Thimoli est un projet indépendant, sans lien avec une association ou une école. Le texte tamoul du Tirukkural provient de l’édition Unicode de Project Madurai (œuvre no 1, https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html) ; son en-tête et sa condition de redistribution sont conservés dans le paquet. La mascotte, les villages, l’icône et leurs dérivés sont documentés dans le registre de provenance du projet ; les anciennes références de travail ne sont pas distribuées. Les licences SIL OFL des polices Nunito, Baloo 2 et Noto Sans Tamil sont conservées avec le projet."
       ]
     ],
-    "export": "Exporter mes données locales",
+    "export": "Exporter ma progression locale",
     "erase": "Effacer mes données locales",
     "confirm": "Effacer définitivement la progression, les réponses et les réglages Thimoli de cette adresse dans ce navigateur ? Exporte-les d’abord si tu veux les conserver. Ferme les autres onglets Thimoli pour éviter qu’ils réenregistrent une ancienne session.",
     "empty": "Aucune donnée locale à exporter.",
@@ -93,7 +93,7 @@ const legalCopy = {
     "privacy": [
       [
         "In brief",
-        "Your progress and settings stay in this browser. There is no signed-in account or cross-device synchronisation. Do not enter personal information in exercises."
+        "In the installed app, your progress and settings stay on this device. In the web version, they stay in this browser. V1 offers no account or cross-device synchronisation. Do not enter personal information in exercises."
       ],
       [
         "Children and families",
@@ -105,7 +105,7 @@ const legalCopy = {
       ],
       [
         "Retention and deletion",
-        "Data remains until you or the browser delete it. There is no automatic expiry period. Storage is separate for each Thimoli web address: a different link may appear to have lost your progress. On a shared device, other people using the same browser may access it."
+        "Local data remains until you, the device or the browser erase it. There is no automatic expiry. Data is separate between the installed app and the different Thimoli web addresses. The tools on this page affect only the version open at this address: to manage installed-app data, open its Privacy page from its settings. Export includes progress, answers and settings; poems and the separate local profile are not included in that export. On a shared device, people using the same app or browser profile may access local data."
       ],
       [
         "Connections and providers",
@@ -152,7 +152,7 @@ const legalCopy = {
         "Thimoli activities are original creations: they reproduce no textbook and no exam paper. Thimoli is an independent project, not linked to any association or school. The Tamil Tirukkural text comes from Project Madurai’s Unicode edition (work no. 1, https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html); its header and redistribution condition are retained in the bundle. The mascot, villages, app icon and their derivatives are recorded in the project provenance register; old working references are not distributed. SIL OFL licence files for Nunito, Baloo 2 and Noto Sans Tamil are retained with the project."
       ]
     ],
-    "export": "Export my local data",
+    "export": "Export my local progress",
     "erase": "Delete my local data",
     "confirm": "Permanently delete Thimoli progress, answers and settings for this address in this browser? Export them first if you want to keep them. Close other Thimoli tabs to prevent an older session being saved again.",
     "empty": "No local data to export.",
@@ -174,7 +174,7 @@ const legalCopy = {
     "privacy": [
       [
         "Kurz erklärt",
-        "Dein Fortschritt und deine Einstellungen bleiben in diesem Browser. Es gibt kein angemeldetes Konto und keine Synchronisierung zwischen Geräten. Gib in Übungen keine persönlichen Informationen ein."
+        "In der installierten App bleiben Fortschritt und Einstellungen auf diesem Gerät. In der Webversion bleiben sie in diesem Browser. V1 bietet weder Konto noch geräteübergreifende Synchronisierung. Trage keine persönlichen Informationen in Übungen ein."
       ],
       [
         "Kinder und Familien",
@@ -186,7 +186,7 @@ const legalCopy = {
       ],
       [
         "Speicherung und Löschung",
-        "Die Daten bleiben gespeichert, bis du oder der Browser sie löschen. Eine automatische Ablauffrist gibt es nicht. Jede Thimoli-Webadresse hat einen eigenen Speicher: Bei einem anderen Link kann der Fortschritt deshalb fehlen. Auf gemeinsam genutzten Geräten können andere Personen im selben Browser darauf zugreifen."
+        "Lokale Daten bleiben erhalten, bis du, das Gerät oder der Browser sie löscht. Es gibt keine automatische Ablauffrist. Daten der installierten App und verschiedener Thimoli-Webadressen bleiben getrennt. Die Werkzeuge auf dieser Seite betreffen nur die unter dieser Adresse geöffnete Version. Für App-Daten öffne Datenschutz in den Einstellungen der installierten App. Der Export enthält Fortschritt, Antworten und Einstellungen; Gedichte und das getrennte lokale Profil sind nicht enthalten. Auf gemeinsam genutzten Geräten können Personen mit derselben App oder demselben Browserprofil lokale Daten einsehen."
       ],
       [
         "Verbindungen und Dienstleister",
@@ -233,7 +233,7 @@ const legalCopy = {
         "Die Thimoli-Aufgaben sind eigene Inhalte: Sie geben kein Schulbuch und keine Prüfungsaufgabe wieder. Thimoli ist ein unabhängiges Projekt ohne Verbindung zu einem Verein oder einer Schule. Der tamilische Tirukkural-Text stammt aus der Unicode-Ausgabe von Project Madurai (Werk Nr. 1, https://www.projectmadurai.org/pm_etexts/utf8/pmuni0001.html); Kopfzeile und Weitergabebedingung bleiben im App-Paket erhalten. Maskottchen, Dörfer, App-Symbol und Ableitungen sind im Herkunftsregister des Projekts dokumentiert; alte Arbeitsreferenzen werden nicht verteilt. Die SIL-OFL-Lizenzdateien für Nunito, Baloo 2 und Noto Sans Tamil werden im Projekt aufbewahrt."
       ]
     ],
-    "export": "Meine lokalen Daten exportieren",
+    "export": "Meinen lokalen Fortschritt exportieren",
     "erase": "Meine lokalen Daten löschen",
     "confirm": "Thimoli-Fortschritt, Antworten und Einstellungen für diese Adresse in diesem Browser endgültig löschen? Exportiere sie vorher, wenn du sie behalten möchtest. Schließe andere Thimoli-Tabs, damit ältere Sitzungen nicht erneut gespeichert werden.",
     "empty": "Keine lokalen Daten zum Exportieren vorhanden.",
