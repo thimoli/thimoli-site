@@ -1,0 +1,163 @@
+/* Shared night palette. Artwork keeps its original colours and transparency. */
+html[data-theme=dark] :is(.sp-goal small,.sp-kural-note,.learning-workspace>p){color:#b0c4b8}
+html[data-theme=dark] :is(.kural-personal-progress,.kural-personal-progress strong){color:#acd9bd}
+html[data-theme=dark] :is(.stat-card,.coach,.page-intro-banner){box-shadow:0 6px 18px #0002}
+html[data-theme=dark] :is(.pf-motto,.kural-mission-target){border-color:#526552}
+html[data-theme=dark] body:has(#legal){background:#111c23;color:#e5eee8;color-scheme:dark}
+html[data-theme=dark] #legal section{background:#1c2c2b;border-color:#41534a}
+html[data-theme=dark] #legal .draft{background:#382f24;border-color:#786145}
+html[data-theme=dark] #legal :is(a,small){color:#afd8c0}
+html[data-theme=dark] #legal button{background:#293e34;color:#e6efe9;border-color:#60745f}
+html[data-theme=dark] .va-world{background:linear-gradient(140deg,#243e33,#302f25);border-color:#47604a}
+html[data-theme=dark] :is(.va-world-copy p,.va-world-theme,.va-progress,.va-map-note,.vmap-label small,.pf-identity p,.pf-next-progress,.pf-next-progress strong,.pf-collection header p,.pf-links small,.pf-footer,.pf-badge-detail>span,.quest-chapter summary small){color:#b4c9bc}
+html[data-theme=dark] .pf-identity h2{color:var(--ink)}
+html[data-theme=dark] :is(.pf-badge-symbol,.pf-next-head .pf-badge-symbol,.pf-badge.earned .pf-badge-symbol,.pf-badge-detail button){background:#36503b;color:#c6dfb6;border-color:#587447;box-shadow:none}
+html[data-theme=dark] .va-stop.suggested{background:#3c3025;border-color:#ab7850}
+.appearance-card{padding:18px}.appearance-card p{margin:0 0 14px;color:var(--muted)}
+.appearance-choice{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.appearance-choice button{display:grid;place-items:center;gap:6px;min-height:78px;border:1px solid var(--line);border-radius:16px;background:var(--card);color:var(--ink);font:inherit;font-weight:800;font-size:13px}
+.appearance-choice button span{font-size:24px}.appearance-choice button[aria-pressed=true]{border-color:var(--orange);background:var(--orange-soft);color:var(--orange)}
+.appearance-choice button:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+html[data-theme=dark]{--ink:#f0f3ee;--ink-2:#c6d3cf;--muted:#abbab6;--muted-2:#8a9e98;--green:#83caa5;--blue:#88c6e5;--violet:#c5ace4;--line:#35473f;--card:#1c2c2b;--white:#223431;--orange:#ff936b;--sp-green:#94d4b3;--sp-muted:#b0c3b9;--pf-green:#94d4b3;--pf-muted:#b0c3b9}
+html[data-theme=dark] :is(.quest-chapter,.va-quest,.va-stop,.va-route-link,.sp-card,.sp-learning-row,.kural-practice,.study-card,.learning-workspace,.learning-tile,.learning-match-tile,.learning-sort button,.learning-input,.learning-checklist button,.quest-memory button,.quest-memory-words button,.syllable-cell,.kural-word-bank button,.kural-answer button){background:#1c2c2b;border-color:#354a43;color:var(--ink)}
+html[data-theme=dark] :is(.quest-hero,.va-mission,.pf-passport){background:linear-gradient(130deg,#352b27,#26332d);border-color:#5c4836;color:var(--ink)}
+html[data-theme=dark] :is(.sp-hero,.pf-next,.kural-mission,.quest-feedback,.learning-feedback,.learning-note,.learning-passage,.kural-answer){background:#203b32;border-color:#3b6551;color:#c2e2d0}
+html[data-theme=dark] :is(.sp-next,.kural-history,.va-final,.quest-help,.study-rule,.learning-hint,.kural-hint,.storage-notice){background:#342e24;border-color:#61523b;color:#ead8b8}
+html[data-theme=dark] :is(.quest-stop.is-current,.va-stop.is-suggested){background:#3c3025;border-color:#ab7850}
+html[data-theme=dark] :is(.quest-hero-signs>span,.quest-stop-number,.va-chapter>span,.va-quest-number,.sp-tag,.sp-symbol,.pf-portrait,.pf-seal,.va-mission-tags span,.va-game-strip span,.study-listen,.quest-listen){background:#2c443b;border-color:#476350;color:#c3e3cc}
+html[data-theme=dark] :is(.quest-kicker,.quest-home-heading .eyebrow,.learning-kicker,.pf-label,.learning-text-button){color:#ffb18d}
+html[data-theme=dark] :is(.quest-chapter-summary small,.quest-journey-progress span,.va-quest small,.va-quest p,.va-stop small,.va-stop-score,.va-path-banner p,.va-route-link small,.va-sources,.va-exams,.sp-hero p,.sp-day,.sp-week-total,.sp-local-note,.sp-disclaimer,.pf-small-wins,.pf-motto,.pf-next p,.pf-passport p,.sp-next p,.learning-lead,.learning-topic,.learning-input-label,.learning-placeholder,.learning-kicker span,.kural-self-note){color:var(--muted)}
+html[data-theme=dark] :is(.sp-hero h2,.sp-week-total strong,.sp-detail-metrics strong,.pf-passport h2,.pf-next h2,.pf-small-wins b,.kural-mission h2,.kural-mission-target>span,.kural-mission-progress strong,.study-word strong,.study-word p,.study-more summary,.learning-cloze,.learning-sort-row>strong,.learning-feedback .learning-solution){color:var(--ink)}
+html[data-theme=dark] :is(.sp-bar-track,.learning-answer-zone,.study-more,.kural-practice-steps span){background:#263832;color:var(--ink-2);border-color:#476052}
+html[data-theme=dark] .learning-answer-zone .learning-tile{background:#30483d;color:var(--ink)}
+html[data-theme=dark] .page-levels .vmap-label{background:#1c2c2bf2;color:var(--ink);border-color:var(--line)}
+html[data-theme=dark] .village-memory button{background:#2c443b;border-color:#577361;color:#dbecdf}
+html[data-theme=dark] .village-memory button.is-open{background:#3b3828;border-color:#b19b66}
+html[data-theme=dark] :is(.village-memory button.is-found,.learning-tile.is-correct,.learning-match-tile.is-matched){background:#254e3a;border-color:#79bc92;color:#e2f9ea}
+html[data-theme=dark] :is(.village-memory button.is-wrong,.learning-feedback.is-wrong,.quest-feedback.wrong,.kural-practice-feedback.wrong,.village-memory-error){background:#482e29;border-color:#d18a72;color:#ffcfb9}
+html[data-theme=dark] :is(.village-memory-note,.village-memory-note.is-wrong){color:var(--ink-2)}
+html[data-theme=dark] .lesson-feedback-sheet{background:#20352ff7;border-color:#4c695b;box-shadow:0 -10px 50px #0007}
+html[data-theme=dark] .lesson-feedback-sheet.is-wrong{background:#392e25fa}
+html[data-theme=dark] .lesson-feedback-sheet :is(.learning-feedback,.quest-feedback){background:transparent;color:var(--ink)}
+html[data-theme=dark] .lesson-feedback-layer{background:#0005}
+html[data-theme=dark] .va-stop-icon{--quest-icon-paper:#24382f;box-shadow:none}
+html[data-theme=dark] .va-icon-book{color:#ffd0a2;background:#493929;--quest-icon-fill:#765631}
+html[data-theme=dark] .va-icon-cards{color:#b1d1f2;background:#293c51;--quest-icon-fill:#4b6788}
+html[data-theme=dark] .va-icon-puzzle{color:#dcc0ef;background:#41354e;--quest-icon-fill:#745984}
+html[data-theme=dark] .va-icon-flag{color:#a8dec0;background:#294738;--quest-icon-fill:#4d7e5c}
+html[data-theme=dark] :is(.mascot-image,.learning-coach,.village-png){background:transparent;box-shadow:none}
+html[data-theme=dark] .bottom-nav{background:#132320f5;border-color:#3a5045;backdrop-filter:blur(18px)}
+html[data-theme=dark] :is(.primary,.nav-home-icon){color:#fff;background:linear-gradient(135deg,#ce4b23,#b94622)}
+html[data-theme=dark] :is(.choice-chip,.setting select){color:var(--ink);background:#263a32;border-color:#4a6053}
+html[data-theme=dark] .settings-disclosure{background:#1c2c2b;border-color:#40554b;box-shadow:0 6px 18px #0002}
+html[data-theme=dark] .settings-disclosure-body{border-color:#40554b}
+html[data-theme=dark] .choice-chip.active{background:#523629;color:#ffba97;border-color:#ca875a}
+html[data-theme=dark] :is(.badge-card,.pf-badge){background:#24392f;border-color:#435e4c;color:var(--ink)}
+html[data-theme=dark] :is(.pf-badge small,.pf-badge p){color:var(--muted)}
+
+/* Model cards own their surface; instruction paragraphs are not callouts. */
+html[data-theme=dark] .quest-models{background:transparent;border:0}
+html[data-theme=dark] .quest-models article{background:#233a34;border-color:#425e52;color:#f0f3ee}
+html[data-theme=dark] .quest-models article>span{color:#c6d3cf}
+html[data-theme=dark] .quest-instruction{background:transparent;border:0;color:#c6d3cf;box-shadow:none}
+/* Page and layout containers never own card surfaces. Keeping these outside
+   mixed :is() groups prevents descendant selectors from raising specificity. */
+html[data-theme=dark] .app-view.quest-play{background:transparent}
+html[data-theme=dark] .quest-journey-progress{background:transparent}
+html[data-theme=dark] .quest-help{background:#1c2c2b;border:1px solid #425e52;border-radius:16px;padding:14px;color:#c6d3cf}
+
+/* Reference cards use the same surface as exercises, including their controls. */
+html[data-theme=dark] :is(.page-alphabet .alphabet-grid-clean button,.page-alphabet .syllable-cell,.writing-picker button,.pronunciation-letter-grid button,.writing-family-select select,.quest-audio-model button,.letter-speaker){background:var(--card);border-color:var(--line);color:var(--ink)}
+html[data-theme=dark] :is(.alphabet-focus-letter,.sound-comparison button>b,.pronunciation-coach-note,.voice-practice-card,.writing-level-strip button,.path-resume,.foundation-next,.kural-phonetic){background:var(--card);border-color:var(--line);color:var(--ink)}
+html[data-theme=dark] .page-foundations-v2 .review-module{background:var(--card);border-color:var(--line)}
+html[data-theme=dark] :is(.foundation-next small,.foundation-next>b){color:var(--orange)}
+html[data-theme=dark] .coach::before{background:var(--card);border-color:var(--line)}
+html[data-theme=dark] .audio-notice{background:#342e24;border-color:#756044;color:#ead8b8}
+html[data-theme=dark] :is(.voice-target,.voice-target-tabs button.active){background:#233f50;border-color:#4d6f80;color:#b9dced}
+html[data-theme=dark] .voice-replay{background:#32647e;color:#f1f8fc}
+html[data-theme=dark] .page-foundations-v2 .foundation-heading .eyebrow{color:var(--orange)}
+html[data-theme=dark] :is(.study-word,.study-examples p,.learning-sort-row){border-color:var(--line)}
+html[data-theme=dark] :is(.study-word small,.learning-fine){color:var(--muted)}
+
+/* Keep selected, correct and retry states above neutral surface rules. */
+html[data-theme=dark] :is(.alphabet-grid button.active,.page-alphabet .alphabet-grid-clean button.active,.vocabulary-tabs button.active){background:#493027;border-color:#d68e69;color:#ffc4a5}
+html[data-theme=dark] :is(.practice-tabs button.active,.writing-mode button.active){background:#493027;color:#ffc4a5;box-shadow:inset 0 0 0 1px #a86a4e}
+html[data-theme=dark] .sound-family-list button.active{background:#233f50;border-color:#83bad6}
+html[data-theme=dark] :is(.writing-picker button.active,.writing-level-strip button.active,.learning-tile[aria-pressed=true],.learning-sort button[aria-pressed=true],.learning-checklist button[aria-checked=true]){background:#254e3a;border-color:#79bc92;color:#e2f9ea}
+html[data-theme=dark] .learning-hole{background:#493027;border-color:#d68e69;color:#ffc4a5}
+html[data-theme=dark] .learning-workspace.is-correct{border-color:#79bc92}
+html[data-theme=dark] .learning-workspace.is-wrong{border-color:#d18a72}
+html[data-theme=dark] .quest-memory .is-revealed{background:#30483d;border-color:#7d9f8b;color:var(--ink)}
+html[data-theme=dark] .quest-memory .is-paired{background:#254e3a;border-color:#79bc92;color:#e2f9ea}
+html[data-theme=dark] .quest-memory .is-wrong{background:#482e29;border-color:#d18a72;color:#ffcfb9}
+html[data-theme=dark] .quest-memory-count.is-wrong{color:#ffbda6}
+html[data-theme=dark] :is(.quest-stop.is-complete .quest-stop-number,.va-quest.complete .va-quest-number){background:#254e3a;color:#bce8cd}
+html[data-theme=dark] .quest-stop.is-current .quest-stop-number{background:#c4542f;color:#fff1e8;box-shadow:0 4px 0 #7a3521}
+html[data-theme=dark] :is(.quest-reward,.village-memory-note){color:#acd9bd}
+html[data-theme=dark] :is(.quest-stars,.writing-feedback.is-almost strong){color:#f0cd86}
+html[data-theme=dark] .writing-feedback.is-retry strong{color:#ffaba8}
+html[data-theme=dark] .writing-canvas.is-success{border-color:#79bc92}
+html[data-theme=dark] .writing-canvas.is-almost{border-color:#f0cd86}
+html[data-theme=dark] .writing-canvas.is-retry{border-color:#ffaba8}
+html[data-theme=dark] .primary.is-success{background:linear-gradient(135deg,#347b55,#286a49);color:#fff}
+html[data-theme=dark] .primary:disabled{background:#35443f;color:#b9c8c0;box-shadow:none;opacity:1}
+html[data-theme=dark] .learning-actions .primary:disabled{opacity:1}
+html[data-theme=dark] .path-resume>button{background:#32647e;color:#f1f8fc}
+
+/* Kural practice has its own feedback and reached-step class names. */
+html[data-theme=dark] .page-kural-home .kural-part{background:var(--card);border-color:var(--line)}
+html[data-theme=dark] :is(.kural-recall-cover,.kural-practice-feedback.correct){background:#203b32;color:#c2e2d0}
+html[data-theme=dark] :is(.kural-recall-cover>span,.kural-practice-steps .reached){color:#acd9bd}
+html[data-theme=dark] :is(.kural-recall-cover small,.kural-answer>span,.kural-practice-steps){color:var(--muted)}
+html[data-theme=dark] .kural-practice-steps .reached>span{background:#254e3a;color:#d1f0df}
+html[data-theme=dark] .kural-practice-steps [aria-current]>span{background:#94d4b3;color:#193629}
+html[data-theme=dark] .kural-jump-chip{background:var(--kural-soft);border-color:var(--line)}
+html[data-theme=dark] .kural-chapter-picker .kural-reading-list>button{background:var(--card);border-color:var(--line)}
+html[data-theme=dark] .kural-chapter-picker .kural-reading-list>button>.kural-reading-action{background:var(--kural-soft)}
+html[data-theme=dark] .kural-chapter-picker .kural-reading-list>button.mastered{background:#203b32;border-color:#658d72}
+html[data-theme=dark] .kural-number-grid button.mastered{background:#203b32;border-color:#658d72}
+
+/* Shared dialogs and assessment pages are also reachable from the village map. */
+html[data-theme=dark] :is(.modal-card,.tour-card,.lesson-card,.answer,.match-tile,.learned-card,.completion-metrics article,.village-result,.stats-key-metrics article,.profile-next-card){background:var(--card);border-color:var(--line);color:var(--ink)}
+html[data-theme=dark] :is(.modal-close,.modal-note,.unlock-rule,.heart-message,.badges-empty>span){background:#263832;color:var(--ink-2);border-color:var(--line)}
+html[data-theme=dark] .profile-next-progress::before{background:#263832}
+html[data-theme=dark] .answer.selected{background:#493027;border-color:#d68e69;color:#ffc4a5}
+html[data-theme=dark] :is(.answer.correct,.answer.is-correct,.answer.answer-correct){background:#254e3a;border-color:#79bc92;color:#e2f9ea}
+html[data-theme=dark] :is(.answer.wrong,.answer.is-wrong,.answer.answer-wrong){background:#482e29;border-color:#d18a72;color:#ffcfb9}
+html[data-theme=dark] .answer.selected .answer-key{background:#c4542f;border-color:#d68e69;color:#fff1e8}
+html[data-theme=dark] .answer.answer-correct .answer-key{background:#38634b;border-color:#79bc92;color:#e2f9ea}
+html[data-theme=dark] .answer.answer-wrong .answer-key{background:#7b4437;border-color:#d18a72;color:#ffded0}
+html[data-theme=dark] :is(.feedback-panel,.feedback-panel.feedback-success){background:#203b32;border-color:#63816d}
+html[data-theme=dark] :is(.feedback-panel.feedback-correction,.feedback-panel.is-wrong,.feedback-panel.wrong){background:#482e29;border-color:#d18a72}
+html[data-theme=dark] .feedback-panel.is-neutral{background:var(--card);border-color:var(--line)}
+html[data-theme=dark] .hint-card>span{color:#f0cd86}
+html[data-theme=dark] .match-tile.selected{background:#233f50;border-color:#83bad6}
+html[data-theme=dark] .match-tile.matched{background:#254e3a;border-color:#79bc92;color:#e2f9ea}
+html[data-theme=dark] .lesson-feedback-sheet :is(.learning-feedback.is-wrong,.quest-feedback.wrong){background:transparent;color:var(--ink)}
+
+/* These module tokens are declared on the page, so theme values belong there. */
+html[data-theme=dark] .stats-renewed{--sp-green:#94d4b3;--sp-muted:#b0c3b9}
+html[data-theme=dark] .profile-renewed{--pf-green:#94d4b3;--pf-muted:#b0c3b9}
+html[data-theme=dark] :is(.sp-detail-metrics p,.sp-session-list small,.va-quest-count){color:var(--muted)}
+html[data-theme=dark] :is(.sp-session-list b,.sp-day-dot){color:#acd9bd}
+html[data-theme=dark] :is(.sp-day.today strong,.pf-small-wins button){color:#ffb18d}
+html[data-theme=dark] :is(.sp-goal,.sp-details,.sp-session-list li,.pf-badge-detail,.pf-links,.pf-links>button,.va-exams,.va-sources,.va-trail){border-color:var(--line)}
+html[data-theme=dark] .pf-top .icon-button{color:var(--ink-2)}
+html[data-theme=dark] .pf-link-icon{background:#3d3347;color:#d8bce8}
+html[data-theme=dark] .pf-badge.earned{background:#263d30;border-color:#65805a}
+html[data-theme=dark] .pf-badge.earned small{color:#b5dbad}
+html[data-theme=dark] .va-sources a{color:#a4dabc}
+html[data-theme=dark] .va-map-jumps a{background:#263d32;color:#c8e3d2}
+html[data-theme=dark] .va-map-jumps a[aria-current]{background:#c4542f;color:#fff1e8}
+html[data-theme=dark] .choice-chip.active>span{background:#c5ace4;color:#2d223b}
+html[data-theme=dark] .settings-card .toggle.off::before,
+html[data-theme=dark] .settings-card .toggle[aria-checked=false]::before{background:#566961}
+html[data-theme=dark] #legal button.danger{background:#482e29;color:#ffcfb9;border-color:#a96a55}
+/* Trim only the alpha fringe at display size, never recolour white buildings. */
+/* Village artwork now ships with clean edges; no dark-mode edge filter needed. */
+/* Village map in dark mode: night-toned medallions instead of white discs */
+html[data-theme=dark] .vmap-node{background:radial-gradient(circle at 50% 38%,#2b4440,#1a2b2a 72%);box-shadow:0 8px 22px #0006,inset 0 0 0 1px #ffffff14}
+html[data-theme=dark] .vmap-node-halo{background:radial-gradient(circle,rgba(255,170,120,.10) 50%,rgba(255,170,120,0) 76%)}
+html[data-theme=dark] .vmap-node-thumb{background:radial-gradient(circle,rgba(255,190,140,.16),transparent 72%)}
+html[data-theme=dark] .vmap-current-badge,html[data-theme=dark] .vmap-current-badge::after{background:#ff7a4a;color:#1b0f0a}
+html[data-theme=dark] .vmap-node-number{background:#1c2c2b;border-color:#35473f;color:#f0f3ee}
